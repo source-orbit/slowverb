@@ -131,6 +131,8 @@ window.onload = function () {
 		"width: 45px;" +
 		"padding-left: 5px;";
 	input.value = lastSpeed * 100;
+	input.min = 60;
+	input.max = 200;
 
 	input.onchange = function () {
 		// "onfocusout" event not working
@@ -374,7 +376,7 @@ window.onload = function () {
 
 	function validateAndChangeSpeed(value) {
 		let val = parseFloat(value || input.value / 100);
-		if (!isNaN(val) && val !== lastSpeed) {
+		if (!isNaN(val) && val !== lastSpeed && val >= 0.6 && val <= 2.0) {
 			/* only change if input is valid and it changed */
 			setStoredSpeed(val);
 			videosChangeSpeed(val);
