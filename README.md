@@ -9,7 +9,7 @@
 ## Install from github..
 
 -   download project as zip ![preview img](https://i.stack.imgur.com/PrvYK.png)
--   unzip and load the folder as [unpacked extension](https://developer.chrome.com/extensions/getstarted#manifest)
+-   unzip and load the folder as [unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 -   remember to click that little refresh button on the extension page for the extension if you make code changes.
 
 ---
