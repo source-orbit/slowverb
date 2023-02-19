@@ -1,5 +1,5 @@
 // Author: https://github.com/khoin
-// Source: https://github.com/khoin/DattorroReverbNode/blob/master/dattorroReverb.js
+// Source: g
 // License: Public Domain
 // Thanks to @khoin on github for the original code!
 

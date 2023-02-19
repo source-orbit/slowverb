@@ -18,13 +18,13 @@
 
 #### spotitySpeedExtension
 
-    @intOrfloat (original author): https://github.com/intOrfloat/spotitySpeedExtension
+- @intOrfloat (original author): https://github.com/intOrfloat/spotitySpeedExtension
     
-    @jamesEmerson112 (added manifest V3 support): https://github.com/jamesEmerson112/spotitySpeedExtension
+- @jamesEmerson112 (added manifest V3 support): https://github.com/jamesEmerson112/spotitySpeedExtension
 
-    Thanks to them for the original codebase and method of injecting the script into the page. Some original code was used as a base for this project, but it has been heavily modified and restructured. Some of their comments are still present in the code.
+Thanks to them for the original codebase and method of injecting the script into the page. Some original code was used as a base for this project, but it has been heavily modified and restructured. Some of their comments are still present in the code.
 
-    Both under Unlicense, therefore, this extension is under the same license.
+Both were under Unlicense, therefore, this extension is under the same license.
 
 -   Changes made from the original codebase:
 
