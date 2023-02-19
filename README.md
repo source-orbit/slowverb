@@ -16,7 +16,7 @@
 
 ## Acknowledgements
 
--   Original Authors of spotitySpeedExtension which this was a derivation of:
+#### spotitySpeedExtension
 
     @intOrfloat (original author): https://github.com/intOrfloat/spotitySpeedExtension
     
@@ -39,3 +39,8 @@
 
 -   This product attempts to apply a "Slowed & Reverb" filter directly on spotify songs,
     which involves changes to the pitch and a lot of audio processing. The original speed extension only changed the playback speed.
+
+#### Dattorro Reverb
+- Reverb would not be possible without @khoin's dattorroReverb audio worklet module:
+https://github.com/khoin/DattorroReverbNode
+- Some presets were adapted from the same repo and referenced in the code
