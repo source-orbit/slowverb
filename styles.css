@@ -1,0 +1,29 @@
+#slowverb-input {
+	background-color: transparent;
+	border: #823333;
+	width: 45px;
+	padding-left: 5px;
+}
+
+#slowverb-reverbInput {
+	background-color: transparent;
+	border: #823333;
+	width: auto;
+	color: #b3b3b3;
+}
+
+#slowverb-container {
+	display: flex;
+	flex-direction: column;
+	align-tems: end;
+	justify-content: center;
+	margin: 0 0 0 0.5rem;
+	padding-left: 3px;
+	padding-right: 1.5px;
+	width: auto;
+	height: auto;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1000;
+	position: relative;
+}

@@ -125,52 +125,24 @@ window.onload = function () {
 	let input = document.createElement("input");
 	input.type = "number";
 	input.id = "slowverb-input";
-	input.style =
-		"background-color: transparent;" +
-		"border: #823333;" +
-		"width: 45px;" +
-		"padding-left: 5px;";
 	input.value = lastSpeed * 100;
 	input.min = 60;
 	input.max = 200;
-
 	input.onchange = function () {
-		// "onfocusout" event not working
 		validateAndChangeSpeed();
 	};
 
+	const reverbOptions = ["none", "smol", "norm", "bige", "swol", "bruh"];
 	let reverbSelect = document.createElement("select");
 	reverbSelect.id = "slowverb-reverbInput";
 	reverbSelect.name = "reverbInput";
-	reverbSelect.style =
-		"background-color: transparent;" +
-		"border: #823333;" +
-		"width: auto;" +
-		"color: #b3b3b3;";
-	let option = document.createElement("option");
-	option.value = "none";
-	option.text = "none";
-	reverbSelect.appendChild(option);
-	option = document.createElement("option");
-	option.value = "smol";
-	option.text = "smol";
-	reverbSelect.appendChild(option);
-	option = document.createElement("option");
-	option.value = "norm";
-	option.text = "norm";
-	reverbSelect.appendChild(option);
-	option = document.createElement("option");
-	option.value = "bige";
-	option.text = "bige";
-	reverbSelect.appendChild(option);
-	option = document.createElement("option");
-	option.value = "swol";
-	option.text = "swol";
-	reverbSelect.appendChild(option);
-	option = document.createElement("option");
-	option.value = "bruh";
-	option.text = "bruh";
-	reverbSelect.appendChild(option);
+	let option = null;
+	for (let i = 0; i < reverbOptions.length; i++) {
+		option = document.createElement("option");
+		option.value = reverbOptions[i];
+		option.text = reverbOptions[i];
+		reverbSelect.appendChild(option);
+	}
 	reverbSelect.value = activeReverb;
 	reverbSelect.addEventListener("click", () => {
 		reverbSelect.addEventListener("change", () => {
@@ -339,20 +311,7 @@ window.onload = function () {
 	// Add input and reverbSelect within a vertical flex container
 	function addInputs() {
 		const container = document.createElement("div");
-		container.style.display = "flex";
-		container.style.flexDirection = "column";
-		container.style.alignItems = "end";
-		container.style.justifyContent = "center";
-		container.style.margin = "0 0 0 0.5rem";
-		container.style.paddingLeft = "3px";
-		container.style.paddingRight = "1.5px";
-		container.style.width = "auto";
-		container.style.height = "auto";
-		container.style.textAlign = "center";
-		container.style.cursor = "pointer";
-		container.style.zIndex = "1000";
-		container.style.position = "relative";
-
+		container.id = "slowverb-container";
 		container.appendChild(input);
 		container.appendChild(reverbSelect);
 		addInput(container);
