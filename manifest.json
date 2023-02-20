@@ -3,7 +3,6 @@
 	"description": "Adds slowed + reverb controls to the spotify player.",
 	"version": "1.0.0",
 	"manifest_version": 3,
-	"host_permissions": ["*://open.spotify.com/*"],
 	"content_scripts": [
 		{
 			"matches": ["*://open.spotify.com/*"],
