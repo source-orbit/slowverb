@@ -3,6 +3,7 @@
 ### Apply a "Slowed & Reverb" filter directly on spotify songs - only works on spotify for web (open.spotify.com)
 
 ### Version 1.0
+Install here: (pending review from google chrome)
 
 ---
 
