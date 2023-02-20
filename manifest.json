@@ -21,7 +21,7 @@
 			"matches": ["*://open.spotify.com/*"]
 		}
 	],
-	"permissions": ["storage", "activeTab"],
+	"permissions": ["storage"],
 
 	"icons": {
 		"16": "icon.png",
