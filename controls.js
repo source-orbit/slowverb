@@ -132,7 +132,15 @@ window.onload = function () {
 		validateAndChangeSpeed();
 	};
 
-	const reverbOptions = ["none", "smol", "norm", "bige", "swol", "bruh"];
+	const reverbOptions = [
+		"none",
+		"tini",
+		"smol",
+		"norm",
+		"bige",
+		"swol",
+		"bruh",
+	];
 	let reverbSelect = document.createElement("select");
 	reverbSelect.id = "slowverb-reverbInput";
 	reverbSelect.name = "reverbInput";
@@ -148,6 +156,9 @@ window.onload = function () {
 		reverbSelect.addEventListener("change", () => {
 			if (reverbSelect.value === activeReverb) return;
 			switch (reverbSelect.value) {
+				case "tini":
+					applyReverb("tini");
+					break;
 				case "smol":
 					applyReverb("smol");
 					break;
@@ -189,6 +200,21 @@ window.onload = function () {
 		"wet",
 	];
 	// Adapted presets can be found from line 153: https://github.com/khoin/DattorroReverbNode/blob/master/index.html
+	// Adapted from the original "smol" (1st) preset from: https://github.com/khoin/DattorroReverbNode/blob/master/index.html
+	const tiniPreset = {
+		preDelay: 0,
+		bandwidth: 0.9,
+		inputDiffusion1: 0.7331,
+		inputDiffusion2: 0.4534,
+		decay: 0.5,
+		decayDiffusion1: 0.6,
+		decayDiffusion2: 0.1992,
+		damping: 0.15,
+		excursionRate: 0,
+		excursionDepth: 0,
+		dry: 0.7015,
+		wet: 0.3012,
+	};
 	// Adapted from the original "bige" (2nd) preset from: https://github.com/khoin/DattorroReverbNode/blob/master/index.html
 	const bigePreset = {
 		preDelay: 0,
@@ -221,6 +247,20 @@ window.onload = function () {
 	};
 	// Some preset names were from: https://github.com/khoin/DattorroReverbNode/blob/master/index.html
 	const presets = {
+		tini: [
+			tiniPreset.preDelay,
+			tiniPreset.bandwidth,
+			tiniPreset.inputDiffusion1,
+			tiniPreset.inputDiffusion2,
+			tiniPreset.decay,
+			tiniPreset.decayDiffusion1,
+			tiniPreset.decayDiffusion2,
+			tiniPreset.damping,
+			tiniPreset.excursionRate,
+			tiniPreset.excursionDepth,
+			tiniPreset.dry,
+			tiniPreset.wet,
+		],
 		smol: [
 			bigePreset.preDelay,
 			bigePreset.bandwidth,
