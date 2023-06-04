@@ -1,7 +1,7 @@
 {
 	"name": "Slowverb",
 	"description": "Adds slowed + reverb controls to the spotify player.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"manifest_version": 3,
 	"content_scripts": [
 		{
