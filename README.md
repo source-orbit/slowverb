@@ -1,9 +1,13 @@
 # Slowverb
 
+### Development Paused
+1. Spotify changed their html class names, hence the speed/reverb controls were not showing - this has been fixed in the "fix_reset" branch. 
+2. Spotify have now made it so that the speed of the video/audio html object perpetually resets. I have attempted to circumvent this by resetting their reset, however, it results in undesirable speed spikes ("fix_reset" branch). I will revisit this problem when I have the time, for now, I removed the extension from Chrome as Spotify's update has broken the speed functionality; reverb remains functional.
+
 ### Apply a "Slowed & Reverb" filter directly on spotify songs - only works on spotify for web (open.spotify.com)
 
 ### Version 1.0.2
-Install here: https://chrome.google.com/webstore/detail/slowverb/keojlecboncaaahnookflkpbckapbpmf
+Install here: <redacted> please read note above.
 
 ---
 
